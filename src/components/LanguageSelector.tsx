@@ -2,17 +2,14 @@ import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Globe } from 'lucide-react';
-import unitedStatesFlag from '@/assets/united-states.png';
-import russiaFlag from '@/assets/russia.png';
-import uzbekistanFlag from '@/assets/uzbekistan.png';
 
 const LanguageSelector: React.FC = () => {
   const { language, setLanguage } = useLanguage();
 
   const languages = [
-    { code: 'en', name: 'English', flag: unitedStatesFlag },
-    { code: 'ru', name: 'Русский', flag: russiaFlag },
-    { code: 'uz', name: "O'zbek", flag: uzbekistanFlag },
+    { code: 'en', name: 'English', flag: '/assets/united-states.png' },
+    { code: 'ru', name: 'Русский', flag: '/assets/russia.png' },
+    { code: 'uz', name: "O'zbek", flag: '/assets/uzbekistan.png' },
   ];
 
   return (

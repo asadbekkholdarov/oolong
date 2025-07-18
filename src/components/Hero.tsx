@@ -2,7 +2,6 @@ import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Star } from 'lucide-react';
-import heroImage from '@/assets/hero-tea.jpg';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
@@ -22,10 +21,15 @@ const Hero: React.FC = () => {
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Premium Oolong Tea"
+        <video
+          src="/assets/backgroundvideo.mp4"
           className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster="/assets/hero-tea.jpg"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent"></div>
       </div>

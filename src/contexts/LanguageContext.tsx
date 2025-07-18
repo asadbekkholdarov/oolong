@@ -94,7 +94,6 @@ const translations = {
     fillOutForm:
       "Fill out the form below and we'll get back to you as soon as possible.",
     downloadCatalog: 'Download Catalog (11MB)',
-    getLocation: 'Share Location',
 
     // About Features
     premiumQuality: 'Premium Quality',
@@ -125,6 +124,7 @@ const translations = {
     error: 'Error occurred',
     success: 'Success!',
     starTitle: 'Premium Quality',
+    otherTea: 'Other Tea',
   },
   ru: {
     // Navigation
@@ -210,7 +210,6 @@ const translations = {
     // Contact
     fillOutForm: 'Заполните форму ниже, и мы свяжемся с вами как можно скорее.',
     downloadCatalog: 'Скачать каталог (11МБ)',
-    getLocation: 'Поделиться местоположением',
 
     // About Features
     premiumQuality: 'Премиальное качество',
@@ -241,6 +240,7 @@ const translations = {
     error: 'Произошла ошибка',
     success: 'Успешно!',
     starTitle: 'Премиальное качество',
+    otherTea: 'Другой чай',
   },
   uz: {
     // Navigation
@@ -327,7 +327,6 @@ const translations = {
     fillOutForm:
       "Quyidagi formani to'ldiring va biz tez orada siz bilan bog'lanamiz.",
     downloadCatalog: 'Katalogni yuklab olish (11MB)',
-    getLocation: 'Joylashuvni ulashish',
 
     // About Features
     premiumQuality: 'Premium sifat',
@@ -358,6 +357,7 @@ const translations = {
     error: 'Xato yuz berdi',
     success: 'Muvaffaqiyatli!',
     starTitle: 'Premium sifat',
+    otherTea: 'Boshqa choy',
   },
 };
 

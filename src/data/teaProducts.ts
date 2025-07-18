@@ -3,7 +3,6 @@ export interface TeaProduct {
   name: string;
   description: string;
   sizes: string[];
-  image: string;
   category: 'premium' | 'standard' | 'bulk';
 }
 
@@ -23,7 +22,6 @@ export const teaProducts: TeaProduct[] = [
     name: '8810',
     description: 'product8810',
     sizes: ['125 GR', '200 GR', '250 GR', '400 GR', '500 GR', '1000 GR'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'premium'
   },
   {
@@ -31,7 +29,6 @@ export const teaProducts: TeaProduct[] = [
     name: '8008',
     description: 'product8008',
     sizes: ['125 GR', '250 GR', '400 GR', '1000 GR'],
-    image: '/src/assets/tea-8008.jpg',
     category: 'premium'
   },
   {
@@ -39,7 +36,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'C20',
     description: 'productC20',
     sizes: ['250 GR', '400 GR', '1000 GR'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'standard'
   },
   {
@@ -47,7 +43,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'C30',
     description: 'productC30',
     sizes: ['250 GR', '400 GR', '1000 GR'],
-    image: '/src/assets/tea-8008.jpg',
     category: 'standard'
   },
   {
@@ -55,7 +50,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'V550',
     description: 'productV550',
     sizes: ['400 GR'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'premium'
   },
   {
@@ -63,7 +57,6 @@ export const teaProducts: TeaProduct[] = [
     name: '3505',
     description: 'product3505',
     sizes: ['1000 GR', '5000 GR'],
-    image: '/src/assets/tea-8008.jpg',
     category: 'bulk'
   },
   {
@@ -71,15 +64,13 @@ export const teaProducts: TeaProduct[] = [
     name: 'C3',
     description: 'productC3',
     sizes: ['400 GR'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'standard'
   },
   {
-    id: 'C100',
-    name: 'C100',
-    description: 'productC100',
+    id: 'C110',
+    name: 'C110',
+    description: 'productC110',
     sizes: ['400 GR'],
-    image: '/src/assets/tea-8008.jpg',
     category: 'standard'
   },
   {
@@ -87,7 +78,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'C120',
     description: 'productC120',
     sizes: ['400 GR'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'standard'
   },
   {
@@ -95,7 +85,6 @@ export const teaProducts: TeaProduct[] = [
     name: '2318 (95\')',
     description: 'product2318',
     sizes: ['1000 GR'],
-    image: '/src/assets/tea-8008.jpg',
     category: 'premium'
   },
   {
@@ -103,7 +92,6 @@ export const teaProducts: TeaProduct[] = [
     name: '9371',
     description: 'product9371',
     sizes: ['500 GR', '1000 GR', '5000 GR'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'standard'
   },
   {
@@ -111,7 +99,6 @@ export const teaProducts: TeaProduct[] = [
     name: '9371 ZIRA TEA',
     description: 'product9371zira',
     sizes: ['Special Blend'],
-    image: '/src/assets/tea-8008.jpg',
     category: 'premium'
   },
   {
@@ -119,7 +106,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'J9 (01A)',
     description: 'productJ9',
     sizes: ['3 KG'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'bulk'
   },
   {
@@ -127,7 +113,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'J4 (9500)',
     description: 'productJ4',
     sizes: ['5 KG'],
-    image: '/src/assets/tea-8008.jpg',
     category: 'bulk'
   },
   {
@@ -135,7 +120,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'J5 (2318)',
     description: 'productJ5',
     sizes: ['3 KG', '5 KG'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'bulk'
   },
   {
@@ -143,7 +127,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'J2 (01A)',
     description: 'productJ2',
     sizes: ['5 KG'],
-    image: '/src/assets/tea-8008.jpg',
     category: 'bulk'
   },
   {
@@ -151,7 +134,6 @@ export const teaProducts: TeaProduct[] = [
     name: 'J8 (708A)',
     description: 'productJ8',
     sizes: ['3 KG'],
-    image: '/src/assets/tea-8810.jpg',
     category: 'bulk'
   }
 ]

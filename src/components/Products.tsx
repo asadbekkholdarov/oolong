@@ -11,19 +11,13 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Package } from 'lucide-react';
-import ProductCarousel from '@/components/ProductCarousel';
-import tea8810 from '@/assets/tea-8810.jpg';
-import tea8008 from '@/assets/tea-8008.jpg';
+
+import { getFirstProductImage } from '@/lib/imageUtils';
 import { useNavigate } from 'react-router-dom';
 
 const Products: React.FC = () => {
   const { t } = useLanguage();
   const navigate = useNavigate();
-
-  const getProductImages = (product: TeaProduct) => {
-    // Use the product.image for all products
-    return [product.image];
-  };
 
   const getCategoryColor = (category: string) => {
     switch (category) {
@@ -52,34 +46,35 @@ const Products: React.FC = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
           {teaProducts.map((product) => {
             return (
               <Card
                 key={product.id}
-                className="group hover:shadow-warm transition-all duration-300 border-border/50 hover:border-primary/20 cursor-pointer"
+                className="group hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 border-border/50 hover:border-primary/20 cursor-pointer transform hover:-translate-y-1"
                 onClick={() => navigate(`/product/${product.id}`)}
               >
                 <CardHeader className="p-0">
-                  <div className="relative">
-                    <ProductCarousel
-                      images={getProductImages(product)}
-                      productName={product.name}
+                  <div className="relative h-90 w-full flex items-center justify-center overflow-hidden bg-gray-100">
+                    <img
+                      src={getFirstProductImage(product.id)}
+                      alt={product.name}
+                      className="w-full h-80 object-contain object-center"
                     />
                   </div>
                 </CardHeader>
 
-                <CardContent className="p-6">
+                <CardContent className="p-2">
                   <CardTitle className="text-xl font-display text-primary mb-2">
                     {product.name}
                   </CardTitle>
 
-                  <CardDescription className="text-muted-foreground mb-4 leading-relaxed">
+                  <CardDescription className="text-muted-foreground mb-3 leading-relaxed">
                     {t(product.description)}
                   </CardDescription>
 
                   {/* Package Sizes */}
-                  <div className="space-y-3">
+                  <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm font-medium text-foreground">
                       <Package className="h-4 w-4" />
                       {t('availableSizes')}:

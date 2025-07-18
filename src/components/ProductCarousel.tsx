@@ -23,7 +23,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ images, productName }
               <img
                 src={image}
                 alt={`${productName} - Size ${index + 1}`}
-                className="w-full h-48 object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
           ))}
